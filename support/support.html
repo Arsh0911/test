@@ -1,0 +1,295 @@
+<html>
+<head>
+    <style>
+        /* CSS code for styling the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            color: #333333;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #666666;
+        }
+
+        .form {
+            margin: 20px 0;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .form-label {
+            flex: 1;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .form-input {
+            flex: 2;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .form-textarea {
+            flex: 2;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            height: 100px;
+        }
+
+        .form-button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333333;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-button:hover {
+            background-color: #444444;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #999999;
+        }
+
+        .footer-link {
+            color: #999999;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            color: #333333;
+            text-decoration: underline;
+        }
+
+
+
+
+       /* ---- */
+
+
+       body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* white background */
+  color: #000000; /* black text */
+}
+
+header {
+  background-color: #000000; /* red background */
+  padding: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  color: #ffffff; /* white text for logo */
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #ffffff; /* white text for navigation links */
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+main {
+  padding: 0px;
+}
+
+#hero {
+  text-align: center;
+  padding: 50px 0;
+}
+
+#hero h1 {
+  font-size: 36px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000; /* red button */
+  color: #ffffff; /* white text */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0px;
+  margin-left: 40px;
+}
+
+#features {
+  padding: 40px 0;
+}
+
+.feature {
+  margin-bottom: 30px;
+}
+
+#cta {
+  text-align: center;
+  background-color: #f2f2f2; /* light gray background */
+  padding: 50px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333333; /* dark gray background */
+  color: #ffffff; /* white text */
+}
+
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><img src="../WhatsApp Image 2024-04-22 at 18.04.07.jpeg" alt=""></a>
+
+        <ul class="navmenu">
+            <li><a href="../index.html">home</a></li>
+            <!-- <li><a href="../services/services.html">services</a></li> -->
+            <li><a href="../shop.page/shop.html">shop</a></li>
+            <li><a href="../about us/about_us.html">about</a></li>
+            <li><a href="../support/support.html">support</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="../login/login.html"><i class='bx bx-user' ></i></a>
+            <a href="../cart/cart.html"><i class='bx bx-cart' ></i></a>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <header style="  padding: 0px;
+    padding-left: 40px;
+    padding-right: 80px;">
+      <div id="logo">
+        <img src="../assets/WhatsApp Image 2024-04-22 at 18.04.07.jpeg" alt="Logo" class="logo">
+      </div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <!-- <a href="../services/services.html">Services</a> -->
+        <a href="../shop.page/shop.html">Shop</a>
+        <a href="../about us/about_us.html">About</a>
+        <a href="../support/support.html">Support</a>
+       
+      </nav>
+    </header>
+
+
+
+
+    <div class="container">
+        <img src="../assets/WhatsApp Image 2024-04-22 at 18.04.07.jpeg" alt="Logo" class="logo">
+        <h1 class="title">Support Page</h1>
+        <h2 class="subtitle">We are here to help you</h2>
+        <form class="form" id="support-form" onsubmit="submitForm(event)">
+            <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" required></textarea>
+            </div>
+            <button type="submit" class="form-button">Send</button>
+        </form>
+        <p class="footer">© 2024 Copilot. All rights reserved. <a href="privacy.html" class="footer-link">Privacy Policy</a> | <a href="terms.html" class="footer-link">Terms of Service</a></p>
+    </div>
+    <script>
+        // Javascript code for handling the form submission
+        function submitForm(event) {
+            // Prevent the default form action
+            event.preventDefault();
+            // Get the form data
+            var formData = new FormData(document.getElementById("support-form"));
+            // Convert the form data to JSON
+            var jsonData = {};
+            for (var pair of formData.entries()) {
+                jsonData[pair[0]] = pair[1];
+            }
+            // Send the form data to a mock API endpoint
+            fetch("https://example.com/api/support", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(jsonData)
+            })
+            .then(function(response) {
+                // Check if the response is successful
+                if (response.ok) {
+                    // Show a success message
+                    alert("Thank you for contacting us. We will get back to you soon.");
+                    // Reset the form
+                    document.getElementById("support-form").reset();
+                } else {
+                    // Show an error message
+                    alert("Something went wrong. Please try again later.");
+                }
+            })
+            .catch(function(error) {
+                // Show an error message
+                alert("Something went wrong. Please try again later.");
+            });
+        }
+    </script>
+</body>
+</html>
